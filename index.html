@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelHub</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+
+<!-- NAVBAR -->
+<nav>
+  <img src="images/logo.png" alt="Travel Hub">
+
+  <div class="nav-right">
+    <ul id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#destination">Destinations</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="#contact">Contact</a></li> 
+    </ul> 
+
+    <button id="menu-btn">☰</button>
+  </div>
+</nav>
+ 
+
+  <!-- HERO -->
+<section class="hero">
+  
+  <h1>Explore the World 🌍</h1>
+  <p>Discover amazing places with TravelHub</p>
+  <a href="#booking">
+    <button>Start Journey</button>
+  </a>
+</section>
+
+<!-- DESTINATIONS -->
+<div class="secondary">
+  <section id="destination" class="destinations">
+
+    <h2>Available Destinations</h2>
+
+    <div class="cards">
+      <div class="card">
+        <a href="maldives.html">
+
+          <img src="images/maldives.jpeg" alt="Maldives">
+        </a>
+        <h3>Maldives</h3>
+      </div>
+
+      <div class="card">
+        <a href="egypt.html">
+          <img src="images/egypt.jpeg" alt="Egypt">
+        </a>
+        <h3>Egypt</h3>
+      </div>
+
+      <div class="card">
+        <a href="japan.html">
+          <img src="images/japan.jpeg" alt="Japan">
+        </a>
+        <h3>Japan</h3>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BOOKING -->
+  <section id="booking" class="booking">
+    <h2>Book Your Trip</h2>
+    <form id="form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email" required>
+      <select>
+  <option disabled selected>Select Destination</option>
+
+  <optgroup label="Maldives">
+    <option>Malé</option>
+    <option>Maafushi</option>
+    <option>Vaadhoo</option>
+  </optgroup>
+
+  <optgroup label="Egypt">
+    <option>Giza</option>
+    <option>Cairo</option>
+    <option>Luxor</option>
+  </optgroup>
+
+  <optgroup label="Japan">
+    <option>Tokyo</option>
+    <option>Mount Fuji</option>
+    <option>Kyoto</option>
+  </optgroup>
+</select>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: travelhub@gmail.com</p>
+    <p>Phone: +977-9800000000</p>
+  </section>
+</div>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 TravelHub | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

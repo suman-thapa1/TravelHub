@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+ 
+
+
+/*NAV BAR*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  transition: all 0.3s ease;
+}
+
+/* LOGO */
+nav img {
+  height: 50px;
+}
+
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* MENU */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+}
+
+/* HOVER UNDERLINE */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+/* MENU BUTTON */
+#menu-btn {
+  display: block;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* HERO*/
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("images/background_image.jpeg") no-repeat center/cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+}
+
+/* OVERLAY */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+  /* HERO WITH IMAGE OVERLAY */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("images/background_image.jpeg") no-repeat center/cover; 
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+  /* Dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+  /* Keep text above overlay */
+.hero h1,
+.hero p,
+.hero button {
+  position: relative;
+  z-index: 1;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.secondary{
+  background: url("images/destination\ .jpeg" );
+  width:100%;
+}
+/* DESTINATIONS */
+.destinations {
+  padding: 40px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* CARD WITH IMAGE OVERLAY TEXT */
+.card {
+  position: relative;
+  width: 200px;
+  height:100px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+
+/* Zoom effect */
+.card:hover img {
+  transform: scale(1.1);
+}
+
+
+/* Text on image */
+.card h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* BOOKING */
+.booking {
+
+  position: relative;
+  padding: 40px;
+  text-align: center;
+
+  color: white;
+}
+
+
+.booking input,
+.booking select {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 200px;
+}
+.booking button {
+  padding: 10px 20px;
+  background: #00b4d8;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* CONTACT */
+.contact {
+  padding: 40px;
+  text-align: center;
+  color:white;
+}
+
+/* FOOTER */
+footer {
+  background: #00b4d8;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
